@@ -1,0 +1,82 @@
+<!-- 
+
+<div class="topnav" id="myTopnav">
+  <a href="#" class="active">Home <i class="fa fa-home" aria-hidden="true"></i></a>
+  <a href="#" routerLink="/profile" routerLinkActive="current">Profile <i class="fa fa-book"></i></a>
+  <a href="#" routerLink="/chat" routerLinkActive="current">Chat<i class="fa fa-envelope" ></i></a>
+  <a href="#">Social <i class="fa fa-user"></i></a>
+  <a href="#" routerLink="/notification" routerLinkActive="current">Notification <i class="fa fa-user"></i></a>
+  <div class="right-lnk">
+  <a href="#"  routerLink="/signup" routerLinkActive="current">Signup</a>
+  <a href="#" routerLink="/login" routerLinkActive="current">Login</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+
+
+
+
+ -->
+ <div class="hero">
+  <nav>
+    <img src="assets/images/logomarket2.png" alt="" class="logo">
+    <ul>
+      <li><a href="" routerLink="/profile" routerLinkActive="current">Profile</a></li>
+      <li><a href="" routerLink="/chat" routerLinkActive="current">Chat</a></li>
+      <li><a href="">Social</a></li>
+      <li><a href="">Post</a></li>
+      <li><a href="" routerLink="/notification" routerLinkActive="current">Notification</a></li>
+    </ul>
+    <img src="assets/images/user.png" alt="" class="user-pic" (click)="isLoggedin=!isLoggedin"> 
+     <div class="sub-menu-wrap" id="subMenu" [hidden]="isLoggedin">
+      <div class="sub-menu">
+        <div class="user-info">
+          <img src="assets/images/user.png" alt="">
+          <h3>James Aldrino</h3>
+        </div>
+        <hr>
+
+        <a href="" class="sub-menu-link">
+          <img src="assets/images/profile.png" alt="">
+          <p>Edit Profile</p>
+          <span>></span>
+        </a>
+        <a href="" class="sub-menu-link">
+          <img src="assets/images/setting.png" alt="">
+          <p>Settings & privacy</p>
+          <span>></span>
+        </a>
+        <a href="" class="sub-menu-link">
+          <img src="assets/images/help.png" alt="">
+          <p>Help & Support</p>
+          <span>></span>
+        </a>
+        <a href="" class="sub-menu-link">
+          <img src="assets/images/logout.png" alt="">
+          <p>Logout</p>
+          <span>></span>
+        </a>
+      </div>
+    </div>
+    <!-- <div class="dropdown">
+      <img src="assets/images/user.png" alt=""class="dropbtn" (click)="toggleMenu()">
+      <div class="dropdown-content">
+        <a href="#"><img src="assets/images/user.png" alt="">
+          <h3>James Aldrino</h3></a>
+        <a href="#"> <img src="assets/images/profile.png" alt="">
+          <p>Edit Profile</p></a>
+        <a href="#"><img src="assets/images/setting.png" alt="">
+          <p>Settings & privacy</p></a>
+          <a href="#"><img src="assets/images/help.png" alt="">
+            <p>Help & Support</p></a>
+          <a href="#"> <img src="assets/images/logout.png" alt="">
+            <p>Logout</p></a>
+      </div>
+    </div> -->
+  </nav>
+
+</div>
